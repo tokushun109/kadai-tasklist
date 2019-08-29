@@ -1,0 +1,8 @@
+<h1>タスク管理アプリ</h1>
+<% @tasks.each do |task| %>
+<ul>
+    <li style="list-style-type: none;" ><%= link_to task.content ,task %></li>
+</ul>
+<% end %>
+
+<%= link_to '新規タスクの追加',new_task_path %>
