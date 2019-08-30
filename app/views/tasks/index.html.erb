@@ -1,7 +1,7 @@
 <h1>タスク管理アプリ</h1>
 <% @tasks.each do |task| %>
 <ul>
-    <li style="list-style-type: none;" ><%= link_to task.content ,task %></li>
+    <li style="list-style-type: none;" ><%= link_to task.content ,task %>:<%= task.status %></li>
 </ul>
 <% end %>
 
