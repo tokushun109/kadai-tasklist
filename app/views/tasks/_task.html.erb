@@ -1,0 +1,16 @@
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>タスク名</th>
+                <th>状態</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% tasks.each do |task| %>
+            <tr>
+                <td><%= link_to task.content, task %></td>
+                <td><%= link_to task.status, task %></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
